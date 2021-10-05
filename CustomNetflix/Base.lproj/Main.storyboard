@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="jQH-cK-5Cc"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="jQH-cK-5Cc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="UzA-4v-wHV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nm1-ZY-108"/>
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="nm1-ZY-108"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2jU-bo-ibD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +87,7 @@
                         <viewLayoutGuide key="safeArea" id="qh8-Zz-S49"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mgZ-af-oIe"/>
+                    <tabBarItem key="tabBarItem" title="저장된 콘텐츠" image="square.3.stack.3d" catalog="system" id="mgZ-af-oIe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QMs-sV-qHn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +111,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="square.3.stack.3d" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
