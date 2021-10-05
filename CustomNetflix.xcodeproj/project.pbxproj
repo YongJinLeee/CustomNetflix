@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		4CCE2B6D270C7363008F3D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B6C270C7363008F3D41 /* AppDelegate.swift */; };
 		4CCE2B6F270C7363008F3D41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B6E270C7363008F3D41 /* SceneDelegate.swift */; };
-		4CCE2B71270C7363008F3D41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B70270C7363008F3D41 /* ViewController.swift */; };
+		4CCE2B71270C7363008F3D41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B70270C7363008F3D41 /* HomeViewController.swift */; };
 		4CCE2B74270C7363008F3D41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCE2B72270C7363008F3D41 /* Main.storyboard */; };
 		4CCE2B77270C7363008F3D41 /* CustomNetflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B75270C7363008F3D41 /* CustomNetflix.xcdatamodeld */; };
 		4CCE2B79270C7364008F3D41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCE2B78270C7364008F3D41 /* Assets.xcassets */; };
 		4CCE2B7C270C7364008F3D41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCE2B7A270C7364008F3D41 /* LaunchScreen.storyboard */; };
 		4CCE2B87270C7364008F3D41 /* CustomNetflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B86270C7364008F3D41 /* CustomNetflixTests.swift */; };
 		4CCE2B92270C7364008F3D41 /* CustomNetflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B91270C7364008F3D41 /* CustomNetflixUITests.swift */; };
+		4CED6C89270CAED50067E626 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CED6C88270CAED50067E626 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		4CCE2B69270C7363008F3D41 /* CustomNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCE2B6C270C7363008F3D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCE2B6E270C7363008F3D41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CCE2B70270C7363008F3D41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CCE2B70270C7363008F3D41 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4CCE2B73270C7363008F3D41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CCE2B76270C7363008F3D41 /* CustomNetflix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CustomNetflix.xcdatamodel; sourceTree = "<group>"; };
 		4CCE2B78270C7364008F3D41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		4CCE2B8D270C7364008F3D41 /* CustomNetflixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomNetflixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCE2B91270C7364008F3D41 /* CustomNetflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNetflixUITests.swift; sourceTree = "<group>"; };
 		4CCE2B93270C7364008F3D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CED6C88270CAED50067E626 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,8 @@
 			children = (
 				4CCE2B6C270C7363008F3D41 /* AppDelegate.swift */,
 				4CCE2B6E270C7363008F3D41 /* SceneDelegate.swift */,
-				4CCE2B70270C7363008F3D41 /* ViewController.swift */,
+				4CED6C88270CAED50067E626 /* SearchViewController.swift */,
+				4CCE2B70270C7363008F3D41 /* HomeViewController.swift */,
 				4CCE2B72270C7363008F3D41 /* Main.storyboard */,
 				4CCE2B78270C7364008F3D41 /* Assets.xcassets */,
 				4CCE2B7A270C7364008F3D41 /* LaunchScreen.storyboard */,
@@ -261,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CCE2B71270C7363008F3D41 /* ViewController.swift in Sources */,
+				4CED6C89270CAED50067E626 /* SearchViewController.swift in Sources */,
+				4CCE2B71270C7363008F3D41 /* HomeViewController.swift in Sources */,
 				4CCE2B6D270C7363008F3D41 /* AppDelegate.swift in Sources */,
 				4CCE2B6F270C7363008F3D41 /* SceneDelegate.swift in Sources */,
 				4CCE2B77270C7363008F3D41 /* CustomNetflix.xcdatamodeld in Sources */,
