@@ -2,12 +2,12 @@
 //  ViewController.swift
 //  CustomNetflix
 //
-//  Created by LeeYongJin on 2021/10/05.
+//  Created by LeeYongJin
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
