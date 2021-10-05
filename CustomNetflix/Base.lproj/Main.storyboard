@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomNetflix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="홈" customClass="HomeViewController" customModule="CustomNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="123.88392857142857"/>
         </scene>
-        <!--Item-->
+        <!--검색-->
         <scene sceneID="fhU-wI-jAu">
             <objects>
-                <viewController id="xEP-0U-CTa" sceneMemberID="viewController">
+                <viewController id="xEP-0U-CTa" userLabel="검색" customClass="SearchViewController" customModule="CustomNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ki-Yu-j7o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="2223.1884057971015" y="123.88392857142857"/>
         </scene>
-        <!--Item-->
+        <!--공개예정-->
         <scene sceneID="roC-Dk-hsO">
             <objects>
-                <viewController id="ZzT-he-d9w" sceneMemberID="viewController">
+                <viewController id="ZzT-he-d9w" userLabel="공개예정" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kr0-5w-dsM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1884" y="-846"/>
         </scene>
-        <!--Item-->
+        <!--저장한 콘텐츠 목록-->
         <scene sceneID="kvn-RW-V1E">
             <objects>
-                <viewController id="RDt-Cm-1Nj" sceneMemberID="viewController">
+                <viewController id="RDt-Cm-1Nj" userLabel="저장한 콘텐츠 목록" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WT-0G-F5E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="4120" y="119"/>
         </scene>
-        <!--Item-->
+        <!--더보기-->
         <scene sceneID="Yjt-Xs-Cnp">
             <objects>
-                <viewController id="x8Y-Ii-pqf" sceneMemberID="viewController">
+                <viewController id="x8Y-Ii-pqf" userLabel="더보기" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jj7-ZA-dQE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
