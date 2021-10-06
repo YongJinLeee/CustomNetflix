@@ -31,8 +31,34 @@
                     <view key="view" contentMode="scaleToFill" id="8Ki-Yu-j7o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lli-D2-Klm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-Zn-mfA">
+                                <rect key="frame" x="0.0" y="95" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="88D-V7-MGI">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UzA-4v-wHV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UzA-4v-wHV" firstAttribute="trailing" secondItem="6i0-Zn-mfA" secondAttribute="trailing" id="2Do-Gt-fVC"/>
+                            <constraint firstItem="6i0-Zn-mfA" firstAttribute="top" secondItem="lli-D2-Klm" secondAttribute="bottom" id="G0m-Nf-Zwt"/>
+                            <constraint firstItem="lli-D2-Klm" firstAttribute="leading" secondItem="UzA-4v-wHV" secondAttribute="leading" id="S5a-Lq-jfU"/>
+                            <constraint firstItem="6i0-Zn-mfA" firstAttribute="leading" secondItem="UzA-4v-wHV" secondAttribute="leading" id="h9R-tR-CtQ"/>
+                            <constraint firstItem="lli-D2-Klm" firstAttribute="top" secondItem="UzA-4v-wHV" secondAttribute="top" id="ig8-nV-siF"/>
+                            <constraint firstItem="UzA-4v-wHV" firstAttribute="bottom" secondItem="6i0-Zn-mfA" secondAttribute="bottom" id="jEJ-ys-fq8"/>
+                            <constraint firstItem="UzA-4v-wHV" firstAttribute="trailing" secondItem="lli-D2-Klm" secondAttribute="trailing" id="nIQ-S7-TW2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="nm1-ZY-108"/>
                 </viewController>
@@ -50,7 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="BEF-fK-x1Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="m61-pw-lZI"/>
+                    <tabBarItem key="tabBarItem" title="공개예정" image="clock.fill" catalog="system" id="m61-pw-lZI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Fv-Qg-Mlh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="s69-A9-EOD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="LVA-5b-GNe"/>
+                    <tabBarItem key="tabBarItem" title="더보기" image="gear" catalog="system" id="LVA-5b-GNe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVj-PT-h3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +137,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="square.3.stack.3d" catalog="system" width="128" height="124"/>
