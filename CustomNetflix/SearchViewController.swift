@@ -36,11 +36,13 @@ extension SearchViewController: UISearchBarDelegate {
         
         // 검색어 있는지 확인
         dismissKeyboard()
-        
-        guard let searchTerm = searchBar.text, searchTerm.isEmpty == false else { return }
+        // 검색버튼 눌리면 최초응답자격 상실-> 키보드 다운
+        guard let searchTerm = searchBar.text, searchTerm.isEmpty == false else { return print("검색어가 없습니다.") }
+        // 검색어 확인 부분 옵셔널 바인딩
         // 검색어 있다면 -> 네트워킹 -> 결과 출력
         
-        print("search Bar clicked: \(searchBar.text) 에 대한 검색이 시작되었습니다.")
+        print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
+        // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
     }
     
 }
