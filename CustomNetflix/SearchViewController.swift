@@ -85,8 +85,9 @@ class searchAPI {
             }
             
             //data -> [Movie]
-            
-            completion([Movie])
+            let string = String(data: resultData, encoding: .utf8)
+            print("search URL Operation Test : \(string)")
+//            completion([Movie])
             
         }
         dataTask.resume()
@@ -95,7 +96,7 @@ class searchAPI {
 
 // model
 
-struct Movie {
+struct Movie: Codable {
     
 }
 
