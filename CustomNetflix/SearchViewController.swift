@@ -45,7 +45,9 @@ extension SearchViewController: UISearchBarDelegate {
         
         searchAPI.search(searchTerm) {
             movies in
-            print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(movies.first?.title)")
+            // 옵셔널 바인딩
+            guard let firstMovieName = movies.first?.title else { return print("검색 결과가 없습니다.")}
+            print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(firstMovieName) 입니다. ")
         }
         print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
         // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
