@@ -5,6 +5,9 @@
 //  Created by LeeYongJin on 2021/10/06.
 //
 
+// 검색 API 필요
+// 결과를 받아올 model (MVVM 패턴) -> stored property가 필요한 것 : 영화 목록, URL Respone
+// 받아온 결과물을 처리할 ViewModel -> collectionView에 뿌릴
 import UIKit
 
 class SearchViewController: UIViewController {
@@ -44,5 +47,58 @@ extension SearchViewController: UISearchBarDelegate {
         print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
         // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
     }
+    
+}
+
+// 검색 동작 수행할 API class
+class searchAPI {
+    //type method - 인스턴스 생성 없이 .으로 바로 메소드 호출 가능
+    // escaping을 쓰면 해당 코드블럭 바깥에서도 사용 될 수 있음을 명시할 수 있음
+    static func search(_ term: String, completion: @escaping (([Movie]) -> Void)) {
+        let session = URLSession(configuration: .default)
+        
+        var urlComponents = URLComponents(string: "https://itunes.apple.com/search?")!
+        let mediaQuery = URLQueryItem(name: "media", value: "music")
+        let entityQuery = URLQueryItem(name: "entity", value: "song")
+        let termQuery = URLQueryItem(name: "term", value: term)
+        
+        urlComponents.queryItems?.append(mediaQuery)
+        urlComponents.queryItems?.append(entityQuery)
+        urlComponents.queryItems?.append(termQuery)
+        
+        let requestURL = urlComponents.url!
+        
+        let dataTask = session.dataTask(with: requestURL) { data, response, error in
+            let successRange = 200..<300
+            
+            // error 테스트 코드
+            guard error == nil, let statusCode = (response as? HTTPURLResponse)?.statusCode,
+                  successRange.contains(statusCode) else {
+                print("Error Code: \(successRange)")
+                completion([])
+                
+                return
+            }
+            guard let resultData = data else {
+                completion([])
+                return
+            }
+            
+            //data -> [Movie]
+            
+            completion([Movie])
+            
+        }
+        dataTask.resume()
+    }
+}
+
+// model
+
+struct Movie {
+    
+}
+
+struct Response {
     
 }
