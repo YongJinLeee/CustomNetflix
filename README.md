@@ -21,7 +21,7 @@ searchAPI class - Searchterm 구현
 
 
 <img width="559" alt="스크린샷 2021-10-08 00 12 00" src="https://user-images.githubusercontent.com/40759743/136413010-f6037e67-bffb-4ed5-9694-58ec1c97135a.png">
-- searchTerm - URLSession protocol을 활용한 Data 연동 테스트
+- searchTerm - URLSession protocol을 활용한 Data 연동 테스트 -> 검색어 잘 전달되어 내려오는 것을 확인
 - 지난 Networking 때 사용한 iTunes URL을 활용해 Test code 작성 (https://github.com/YongJinLeee/networking/blob/main/URLSession_class.playground/Contents.swift)
 
 ~~~Swift
