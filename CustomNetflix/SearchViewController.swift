@@ -45,6 +45,7 @@ extension SearchViewController: UISearchBarDelegate {
         
         searchAPI.search(searchTerm) {
             movies in
+            print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(movies.first?.title)")
         }
         print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
         // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
@@ -60,8 +61,8 @@ class searchAPI {
         let session = URLSession(configuration: .default)
         
         var urlComponents = URLComponents(string: "https://itunes.apple.com/search?")!
-        let mediaQuery = URLQueryItem(name: "media", value: "music")
-        let entityQuery = URLQueryItem(name: "entity", value: "song")
+        let mediaQuery = URLQueryItem(name: "media", value: "movie")
+        let entityQuery = URLQueryItem(name: "entity", value: "movie")
         let termQuery = URLQueryItem(name: "term", value: term)
         
         urlComponents.queryItems?.append(mediaQuery)
@@ -86,15 +87,32 @@ class searchAPI {
                 return
             }
             
-            //data -> [Movie]
-            let string = String(data: resultData, encoding: .utf8)
-            print("search URL Operation Test : \(string)")
+            let parsedMoviesInfo = searchAPI.parseMovies(resultData)
+            completion(parsedMoviesInfo)
+//            print("search URL Operation Test : \(parsedMoviesInfo.count), 첫 번째 영화의 이름은 \(parsedMoviesInfo.first?.title)")
 //            completion([Movie])
             
         }
         dataTask.resume()
     }
+    //data -> [Movie]
+    // parsing method
+    static func parseMovies(_ data: Data) -> [Movie] {
+        let decoder = JSONDecoder()
+        
+        do {
+            let response = try decoder.decode(Response.self, from: data)
+            
+            let moviesInfo = response.movies
+            return moviesInfo
+        } catch let error {
+            print("Parsing error: \(error.localizedDescription)")
+            return []
+        }
+    }
 }
+
+
 
 // model
 
