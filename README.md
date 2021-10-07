@@ -13,7 +13,7 @@ NetFlix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 ### 개발 일지 (역순)
 
 201007
-searchAPI class 구현
+searchAPI class - Searchterm 구현
 > URLSession관련 componenets, query Item 등 URL관련 프로퍼티 구현
 
 
