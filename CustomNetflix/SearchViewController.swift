@@ -15,7 +15,8 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var resultCollectionView: UICollectionView!
     
-    
+    //  MVVM 패턴 하에서는 View Model에서 Model을 가져오는게 맞지만.. 일단 초기화를 위해
+    var movies: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,34 @@ class SearchViewController: UIViewController {
 //        NotificationCenter.default.addObserver(self, selector: #selector(adjstInputView), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
+}
+
+// CollectionView
+extension SearchViewController: UICollectionViewDelegate {
+    
+}
+
+extension SearchViewController: UICollectionViewDataSource {
+    
+    // 데이터 수
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    // 표현 방식
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        guard let SRCresultsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchResultsCell", for: indexPath) as? SearchResultsCell else {
+            return UICollectionViewCell()
+        }
+        return SRCresultsCell
+    }
+    
+}
+
+class SearchResultsCell: UICollectionViewCell {
+    @IBOutlet weak var movieThumbnail: UIImageView!
 }
 
 extension SearchViewController: UISearchBarDelegate {
@@ -45,7 +74,7 @@ extension SearchViewController: UISearchBarDelegate {
         
         searchAPI.search(searchTerm) {
             movies in
-            // 옵셔널 바인딩
+            // 옵셔널 바인딩 -> data 단위에서 전체적으로 처리할 수 없을까?
             guard let firstMovieName = movies.first?.title else { return print("검색 결과가 없습니다.")}
             print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(firstMovieName) 입니다. ")
         }
@@ -55,7 +84,7 @@ extension SearchViewController: UISearchBarDelegate {
     
 }
 
-// 검색 동작 수행할 API class
+// 검색 API
 class searchAPI {
     //type method - 인스턴스 생성 없이 .으로 바로 메소드 호출 가능
     // escaping을 쓰면 해당 코드블럭 바깥에서도 사용 될 수 있음을 명시할 수 있음
