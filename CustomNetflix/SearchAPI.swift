@@ -34,7 +34,7 @@ class SearchAPI {
                 return
             }
             
-            let parsedMoviesInfo = searchAPI.parseMovies(resultData)
+            let parsedMoviesInfo = SearchAPI.parseMovies(resultData)
             completion(parsedMoviesInfo)
 //            print("search URL Operation Test : \(parsedMoviesInfo.count), 첫 번째 영화의 이름은 \(parsedMoviesInfo.first?.title)")
 //            completion([Movie])
