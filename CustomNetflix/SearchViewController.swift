@@ -57,6 +57,23 @@ class SearchResultsCell: UICollectionViewCell {
     @IBOutlet weak var movieThumbnail: UIImageView!
 }
 
+extension SearchViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let margin: CGFloat = 8
+        let itemSpacing: CGFloat =  10
+        
+        let width: CGFloat = (collectionView.bounds.width - (margin * 2) - (itemSpacing * 2)) / 3
+        
+        // 포스터 비율 7:10 
+        let height: CGFloat = (width / 7) * 10
+        
+        return CGSize(width: width, height: height)
+    }
+}
+
+
+
 extension SearchViewController: UISearchBarDelegate {
     // 키보드 내리기
     private func dismissKeyboard() {
