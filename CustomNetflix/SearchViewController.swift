@@ -42,10 +42,12 @@ extension SearchViewController: UICollectionViewDataSource {
     // 표현 방식
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        
         guard let SRCresultsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchResultsCell", for: indexPath) as? SearchResultsCell else {
             return UICollectionViewCell()
         }
+        // test code
+        SRCresultsCell.backgroundColor = .systemPink
+        
         return SRCresultsCell
     }
     
@@ -77,6 +79,11 @@ extension SearchViewController: UISearchBarDelegate {
             // 옵셔널 바인딩 -> data 단위에서 전체적으로 처리할 수 없을까?
             guard let firstMovieName = movies.first?.title else { return print("검색 결과가 없습니다.")}
             print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(firstMovieName) 입니다. ")
+            
+            // 검색 완료 후 검색된 데이터를 ViewController에 인스턴스로 호출된 Response structure에 넣고 Cell 리로드
+            self.movies = movies
+            self.resultCollectionView.reloadData()
+            
         }
         print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
         // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
