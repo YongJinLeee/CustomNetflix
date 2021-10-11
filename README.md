@@ -12,7 +12,48 @@ NetFlix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 -----------
 ### 개발 일지 (역순)
 
-201007
+211011
+- searchViewController의 Collection View관련 protocol method 작성
+- 검색 결과 중, 검색된 자료 수에 따라 cell을 재사용하여 배치 (3줄), 작동 확인을 위하여 Cell의 배경색을 임의로 systemPink로 설정해 test 진행
+
+##### 1. Cell 배치
+
+<img width="427" alt="스크린샷 2021-10-12 02 09 40" src="https://user-images.githubusercontent.com/40759743/136828964-7bda4b0d-af17-4d88-b817-3758e3b1825c.png">
+ 
+ ###### Console Message
+![스크린샷 2021-10-12 02 07 23](https://user-images.githubusercontent.com/40759743/136829537-c443c176-8f86-4de2-abe2-0ed130b9cd50.png)
+ 
+##### 2. Search Button Click - 결과에 따른 화면 재구성 부분 main thread에 비동기 처리
+> UI관련 업데이트이기 때문에 GCD 프로토콜에 따라 main thread로 비동기 처리
+###### Main Thread Checker Error Message
+![스크린샷 2021-10-12 00 56 01](https://user-images.githubusercontent.com/40759743/136829833-adb4de96-cbd4-4f69-9b7d-a998ba3661ff.png)
+
+###### Fixed .async
+
+~~~Swift
+func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+       
+        // ....중략
+        
+        SearchAPI.search(searchTerm) {
+            movies in
+    
+            guard let firstMovieName = movies.first?.title else { return print("검색 결과가 없습니다.")}
+            print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(firstMovieName) 입니다. ")
+            
+            // 검색 완료 후 검색된 데이터를 ViewController에 인스턴스로 호출된 Response structure에 넣고 Cell 업데이트 (비동기처리)
+          
+            DispatchQueue.main.async {
+                self.movies = movies
+                self.resultCollectionView.reloadData()
+            }
+        }
+        print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
+    }
+~~~
+
+--------------
+211007
 searchAPI class - Searchterm 구현
 > URLSession관련 componenets, query Item 등 URL관련 프로퍼티 구현
 
