@@ -97,15 +97,12 @@ extension SearchViewController: UISearchBarDelegate {
             guard let firstMovieName = movies.first?.title else { return print("검색 결과가 없습니다.")}
             print("넘어온 영화 개수 : \(movies.count), 첫 번째 영화의 이름은 \(firstMovieName) 입니다. ")
             
-            // 검색 완료 후 검색된 데이터를 ViewController에 인스턴스로 호출된 Response structure에 넣고 Cell 리로드
+            // 검색 완료 후 검색된 데이터를 ViewController에 인스턴스로 호출된 Response structure에 넣고 Cell 업데이트 (비동기처리)
           
             DispatchQueue.main.async {
                 self.movies = movies
                 self.resultCollectionView.reloadData()
             }
-            
-            // Crash
-            // Thread 4: EXC_BREAKPOINT (code=1, subcode=0x1800f4978) - : UICollectionView.reloadData() must be used from main thread only
         }
         print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
         // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
