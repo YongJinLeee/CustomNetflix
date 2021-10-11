@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C9EE2A82714888A00741E50 /* searchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EE2A72714888A00741E50 /* searchAPI.swift */; };
+		4C9EE2A82714888A00741E50 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EE2A72714888A00741E50 /* SearchAPI.swift */; };
 		4CCE2B6D270C7363008F3D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B6C270C7363008F3D41 /* AppDelegate.swift */; };
 		4CCE2B6F270C7363008F3D41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B6E270C7363008F3D41 /* SceneDelegate.swift */; };
 		4CCE2B71270C7363008F3D41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B70270C7363008F3D41 /* HomeViewController.swift */; };
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C9EE2A72714888A00741E50 /* searchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchAPI.swift; sourceTree = "<group>"; };
+		4C9EE2A72714888A00741E50 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 		4CCE2B69270C7363008F3D41 /* CustomNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCE2B6C270C7363008F3D41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCE2B6E270C7363008F3D41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				4CCE2B7A270C7364008F3D41 /* LaunchScreen.storyboard */,
 				4CCE2B7D270C7364008F3D41 /* Info.plist */,
 				4CCE2B75270C7363008F3D41 /* CustomNetflix.xcdatamodeld */,
-				4C9EE2A72714888A00741E50 /* searchAPI.swift */,
+				4C9EE2A72714888A00741E50 /* SearchAPI.swift */,
 			);
 			path = CustomNetflix;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			files = (
 				4CED6C89270CAED50067E626 /* SearchViewController.swift in Sources */,
 				4CCE2B71270C7363008F3D41 /* HomeViewController.swift in Sources */,
-				4C9EE2A82714888A00741E50 /* searchAPI.swift in Sources */,
+				4C9EE2A82714888A00741E50 /* SearchAPI.swift in Sources */,
 				4CCE2B6D270C7363008F3D41 /* AppDelegate.swift in Sources */,
 				4CCE2B6F270C7363008F3D41 /* SceneDelegate.swift in Sources */,
 				4CCE2B77270C7363008F3D41 /* CustomNetflix.xcdatamodeld in Sources */,
