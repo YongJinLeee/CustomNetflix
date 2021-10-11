@@ -65,7 +65,7 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
         
         let width: CGFloat = (collectionView.bounds.width - (margin * 2) - (itemSpacing * 2)) / 3
         
-        // 포스터 비율 7:10 
+        // 포스터 비율 7:10
         let height: CGFloat = (width / 7) * 10
         
         return CGSize(width: width, height: height)
@@ -100,7 +100,8 @@ extension SearchViewController: UISearchBarDelegate {
             // 검색 완료 후 검색된 데이터를 ViewController에 인스턴스로 호출된 Response structure에 넣고 Cell 리로드
             self.movies = movies
             self.resultCollectionView.reloadData()
-            
+            // Crash
+            // Thread 4: EXC_BREAKPOINT (code=1, subcode=0x1800f4978) - : UICollectionView.reloadData() must be used from main thread only
         }
         print("search Bar clicked: \(searchTerm) 에 대한 검색이 시작되었습니다.")
         // 옵셔널 바인딩 되었으므로 콘솔 확인 searchBar.text -> searchTerm으로 변경
