@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C9EE2A82714888A00741E50 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EE2A72714888A00741E50 /* SearchAPI.swift */; };
+		4C9EE2AB271567EE00741E50 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9EE2AA271567EE00741E50 /* Kingfisher */; };
 		4CCE2B6D270C7363008F3D41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B6C270C7363008F3D41 /* AppDelegate.swift */; };
 		4CCE2B6F270C7363008F3D41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B6E270C7363008F3D41 /* SceneDelegate.swift */; };
 		4CCE2B71270C7363008F3D41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE2B70270C7363008F3D41 /* HomeViewController.swift */; };
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9EE2AB271567EE00741E50 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +155,9 @@
 			dependencies = (
 			);
 			name = CustomNetflix;
+			packageProductDependencies = (
+				4C9EE2AA271567EE00741E50 /* Kingfisher */,
+			);
 			productName = CustomNetflix;
 			productReference = 4CCE2B69270C7363008F3D41 /* CustomNetflix.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 4CCE2B60270C7363008F3D41;
+			packageReferences = (
+				4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4CCE2B6A270C7363008F3D41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -605,6 +613,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C9EE2AA271567EE00741E50 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4CCE2B75270C7363008F3D41 /* CustomNetflix.xcdatamodeld */ = {

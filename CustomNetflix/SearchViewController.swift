@@ -46,14 +46,18 @@ extension SearchViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        DispatchQueue.global().async {
-            
-            let movieThumb = self.movies[indexPath.item]
-            let data = try? Data(contentsOf: movieThumb.thumbnailPath)
-            DispatchQueue.main.async {
-                SRCresultsCell.movieThumbnail.image = UIImage(data: data!)
-            }
-        }
+        
+        
+        
+        
+//        DispatchQueue.global().async {
+//
+//            let movieThumb = self.movies[indexPath.item]
+//            let data = try? Data(contentsOf: movieThumb.thumbnailPath)
+//            DispatchQueue.main.async {
+//                SRCresultsCell.movieThumbnail.image = UIImage(data: data!)
+//            }
+//        }
 //        let movieThumb = movies[indexPath.item]
 //        SRCresultsCell.movieThumbnail.image = movieThumb.thumbnailPath
         
