@@ -9,6 +9,7 @@
 // 결과를 받아올 model (MVVM 패턴) -> stored property가 필요한 것 : 영화 목록, URL Respone
 // 받아온 결과물을 처리할 ViewModel -> collectionView에 뿌릴
 import UIKit
+import Kingfisher
 
 class SearchViewController: UIViewController {
 
@@ -46,19 +47,21 @@ extension SearchViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
+        //kingfisher 사용해 이미지 넣기
+        let movieThumb = movies[indexPath.item]
+        let thumbnailURL = URL(string: movieThumb.thumbnailPath)
         
-        
-        
+        SRCresultsCell.movieThumbnail.kf.setImage(with: thumbnailURL)
         
 //        DispatchQueue.global().async {
 //
 //            let movieThumb = self.movies[indexPath.item]
-//            let data = try? Data(contentsOf: movieThumb.thumbnailPath)
+//            let data = try? Data(contentsOf: movieThumb.thumbnailPath)!
 //            DispatchQueue.main.async {
 //                SRCresultsCell.movieThumbnail.image = UIImage(data: data!)
 //            }
 //        }
-//        let movieThumb = movies[indexPath.item]
+        
 //        SRCresultsCell.movieThumbnail.image = movieThumb.thumbnailPath
         
 //         test code
