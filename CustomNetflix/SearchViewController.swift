@@ -45,7 +45,19 @@ extension SearchViewController: UICollectionViewDataSource {
         guard let SRCresultsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchResultsCell", for: indexPath) as? SearchResultsCell else {
             return UICollectionViewCell()
         }
-        // test code
+        
+        DispatchQueue.global().async {
+            
+            let movieThumb = self.movies[indexPath.item]
+            let data = try? Data(contentsOf: movieThumb.thumbnailPath)
+            DispatchQueue.main.async {
+                SRCresultsCell.movieThumbnail.image = UIImage(data: data!)
+            }
+        }
+//        let movieThumb = movies[indexPath.item]
+//        SRCresultsCell.movieThumbnail.image = movieThumb.thumbnailPath
+        
+//         test code
         SRCresultsCell.backgroundColor = .systemPink
         
         return SRCresultsCell
