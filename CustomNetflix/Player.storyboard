@@ -19,15 +19,21 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ln3-H9-sWc">
                                 <rect key="frame" x="824" y="37" width="39" height="30"/>
                                 <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closingPlayer:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uaU-14-trP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ln3-H9-sWc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="37" id="Nij-gN-4Pu"/>
-                            <constraint firstItem="ln3-H9-sWc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="780" id="W0Q-2E-kXe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ln3-H9-sWc" secondAttribute="trailing" constant="19" id="aXT-wA-dK7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeBtn" destination="ln3-H9-sWc" id="8L4-If-ypO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
