@@ -36,9 +36,9 @@ extension SearchViewController: UICollectionViewDelegate {
         let movieItem = movies[indexPath.item]
         
         let PlayerSB = UIStoryboard(name: "Player", bundle: nil)
-        
         let PlayerVC = PlayerSB.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
         
+        PlayerVC.modalPresentationStyle = .fullScreen
         present(PlayerVC, animated: false, completion: nil)
     }
     
