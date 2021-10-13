@@ -5,9 +5,7 @@ NetFlix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 #### 사용 기술 및 라이브러리
 - Swift, iOS
 - URLSession, AVFoundation
-~~~
-
-~~~
+- 외부 라이브러리 : Kingfisher
 
 -----------
 ### 개발 일지 (역순)
