@@ -53,18 +53,7 @@ extension SearchViewController: UICollectionViewDataSource {
         
         SRCresultsCell.movieThumbnail.kf.setImage(with: thumbnailURL)
         
-//        DispatchQueue.global().async {
-//
-//            let movieThumb = self.movies[indexPath.item]
-//            let data = try? Data(contentsOf: movieThumb.thumbnailPath)!
-//            DispatchQueue.main.async {
-//                SRCresultsCell.movieThumbnail.image = UIImage(data: data!)
-//            }
-//        }
-        
-//        SRCresultsCell.movieThumbnail.image = movieThumb.thumbnailPath
-        
-//         test code
+//         if : image Load Fail
         SRCresultsCell.backgroundColor = .systemPink
         
         return SRCresultsCell
@@ -128,7 +117,6 @@ extension SearchViewController: UISearchBarDelegate {
     }
     
 }
-
 
 // model
 
