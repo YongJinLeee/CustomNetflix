@@ -34,6 +34,12 @@ extension SearchViewController: UICollectionViewDelegate {
     // 검색 결과 Click -> 동영상 플레이어 ViewCon
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let movieItem = movies[indexPath.item]
+        
+        let PlayerSB = UIStoryboard(name: "Player", bundle: nil)
+        
+        let PlayerVC = PlayerSB.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
+        
+        present(PlayerVC, animated: false, completion: nil)
     }
     
 }
