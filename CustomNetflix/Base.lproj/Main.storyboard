@@ -28,7 +28,7 @@
         <!--검색-->
         <scene sceneID="fhU-wI-jAu">
             <objects>
-                <viewController id="xEP-0U-CTa" userLabel="검색" customClass="SearchViewController" customModule="CustomNetflix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="xEP-0U-CTa" userLabel="검색" customClass="SearchViewController" customModule="CustomNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ki-Yu-j7o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
