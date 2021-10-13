@@ -31,6 +31,11 @@ class SearchViewController: UIViewController {
 // CollectionView
 extension SearchViewController: UICollectionViewDelegate {
     
+    // 검색 결과 Click -> 동영상 플레이어 ViewCon
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movieItem = movies[indexPath.item]
+    }
+    
 }
 
 extension SearchViewController: UICollectionViewDataSource {
