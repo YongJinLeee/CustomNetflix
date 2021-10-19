@@ -9,6 +9,7 @@
 // 결과를 받아올 model (MVVM 패턴) -> stored property가 필요한 것 : 영화 목록, URL Respone
 // 받아온 결과물을 처리할 ViewModel -> collectionView에 뿌릴
 import UIKit
+import AVFoundation
 import Kingfisher
 
 class SearchViewController: UIViewController {
@@ -33,12 +34,17 @@ extension SearchViewController: UICollectionViewDelegate {
     
     // 검색 결과 Click -> 동영상 플레이어 ViewCon
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let movieItem = movies[indexPath.item]
+        let movieInfo = movies[indexPath.item]
+        let movieItemURL = URL(string: movieInfo.previewURL)!
+        let item = AVPlayerItem(url: movieItemURL)
+        
         
         let PlayerSB = UIStoryboard(name: "Player", bundle: nil)
         let PlayerVC = PlayerSB.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
         
         PlayerVC.modalPresentationStyle = .fullScreen
+        // Player에 동영상 주소 로드
+        PlayerVC.player.replaceCurrentItem(with: item)
         present(PlayerVC, animated: false, completion: nil)
     }
     
