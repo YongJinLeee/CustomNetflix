@@ -10,10 +10,16 @@ import AVFoundation
 
 class PlayerViewController: UIViewController {
     
+    // 추가해야 할 것
+    // 1. seeking bar
+    // 2. 재생 후 View isHidden 기능 추가
+    // 2-1. 화면 터치시 view 다시 보이기 - 자동 사라짐 기능
+    
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var playerView: PlayerView!
     @IBOutlet weak var controllView: UIView!
     
+    // play에 필요한 데이터는 searchViewController에서 가져옴
     let player = AVPlayer()
     
     // player 가로뷰 자동설정
@@ -24,7 +30,7 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // PlayerView 상속
+        // PlayerView AVPlayer 인스턴스화
         playerView.player = player
         
     }
