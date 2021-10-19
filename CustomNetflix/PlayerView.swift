@@ -7,7 +7,7 @@
 
 import UIKit
 import AVFoundation
-// 공식 문서 https://developer.apple.com/documentation/avfoundation/avplayerlayer/ 에서 다운로드
+// 공식 문서 https://developer.apple.com/documentation/avfoundation/avplayerlayer/ 에서 참조
 /// A view that displays the visual contents of a player object.
 class PlayerView: UIView {
 

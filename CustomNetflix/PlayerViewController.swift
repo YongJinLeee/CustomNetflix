@@ -40,22 +40,21 @@ class PlayerViewController: UIViewController {
         // 자동재생
         play()
     }
-    
+
     @IBOutlet weak var closeBtn: UIButton!
-    
     @IBAction func togglePlayBtn(_ sender: Any) {
         if player.isPlaying { // true: 실행중
-            // 정지 -> Foundation moduel에 있음
             pause()
         } else {
             play()
-            // 실행
         }
     }
 
     @IBAction func closingPlayer(_ sender: Any) {
         
+        // test Code
         print("클릭 확인 : close btn clicked")
+        
         playerReset()
         dismiss(animated: false, completion: nil)
         portraitlMode()
@@ -86,7 +85,6 @@ func portraitlMode() {
 
 // AVPlyaer extension
 extension AVPlayer {
-    
     //재생 여부 확인
     var isPlaying: Bool {
         
