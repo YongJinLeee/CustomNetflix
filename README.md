@@ -5,10 +5,52 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 #### 사용 기술 및 라이브러리
 - Swift, iOS
 - URLSession, AVFoundation
-- 외부 라이브러리 : Kingfisher
+- 외부 라이브러리 : Kingfisher(https://github.com/onevcat/Kingfisher)
 
 -----------
 ### 개발 일지 (역순)
+
+211013
+###### 1. Thumbnail Image caching 
+- Kingfisher 라이브러리를 이용해 URL path에 있는 이미지를 캐싱, cell의 Image View에 road
+- 라이브러리 관련 참조 : https://dev200ok.blogspot.com/2020/09/ios-kingfisher.html
+
+<img width="435" alt="스크린샷 2021-10-20 00 08 34" src="https://user-images.githubusercontent.com/40759743/137938929-8d03d7a4-11e2-41ef-bb48-7cf5676907a2.png">
+
+~~~Swift
+ let movieThumb = movies[indexPath.item]
+        let thumbnailURL = URL(string: movieThumb.thumbnailPath)
+        
+        SRCresultsCell.movieThumbnail.kf.setImage(with: thumbnailURL)
+        
+        // image Load Fail 
+        SRCresultsCell.backgroundColor = .systemPink
+        
+        return SRCresultsCell
+~~~
+
+###### 2.Player View 구성
+
+<img width="528" alt="스크린샷 2021-10-20 00 15 13" src="https://user-images.githubusercontent.com/40759743/137940160-09ceeff7-8018-406f-81df-1ab04f17a3ce.png">
+
+
+- ViewController에 UIView, Play, close Button 배치
+
+
+~~~Swift
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // collectionView selected -> View 전환
+        let PlayerSB = UIStoryboard(name: "Player", bundle: nil)
+        let PlayerVC = PlayerSB.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
+        
+        // modal present fullScreen으로 설정 -> iOS13 이후 디폴트는 하단부 팝업형태
+        PlayerVC.modalPresentationStyle = .fullScreen
+        present(PlayerVC, animated: false, completion: nil)
+    }
+~~~
+
+------------
 
 211011
 - searchViewController의 Collection View관련 protocol method 작성
