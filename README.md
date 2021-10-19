@@ -1,6 +1,6 @@
 # CustomNetflix
 
-NetFlix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
+Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 
 #### 사용 기술 및 라이브러리
 - Swift, iOS
