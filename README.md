@@ -10,9 +10,57 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 -----------
 ### 개발 일지 (역순)
 
+201019
+
+##### Player View
+
+<img width="527" alt="스크린샷 2021-10-20 00 30 54" src="https://user-images.githubusercontent.com/40759743/137943828-28053a7a-cc4d-411d-9be1-592d15048742.png">
+
+- UIView에 AVPlayerLayer 적용
+- Player View 위에 UIView를 씌워 Player controller 기능 이전(재생,멈춤, 닫기 등)
+- play:pause 토글 버튼 기능 구현(동영상 재생, 멈춤)
+- close 버튼 클릭 때 AVPlayerItem reset 메소드 적용
+- URLSession으로부터 파싱된 정보로 PreviewURL 정보 AVPlayer에 전달
+~~~Swift
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movieInfo = movies[indexPath.item]
+        let movieItemURL = URL(string: movieInfo.previewURL)!
+        let item = AVPlayerItem(url: movieItemURL)
+        
+        let PlayerSB = UIStoryboard(name: "Player", bundle: nil)
+        let PlayerVC = PlayerSB.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
+        PlayerVC.modalPresentationStyle = .fullScreen
+
+        // AVPlayer에 동영상 주소 로드
+        PlayerVC.player.replaceCurrentItem(with: item)
+        present(PlayerVC, animated: false, completion: nil)
+    }
+~~~
+- 썸네일 클릭 -> View 전환 -> 자동재생
+
+~~~swift
+    
+    ...
+
+  override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 자동재생
+        play()
+    }
+    
+    ...
+    
+    func play() {
+    
+    player.play()
+    playBtn.isSelected = ture
+   } 
+~~~
+
+-----------
 211013
-###### 1. Thumbnail Image caching 
-- Kingfisher 라이브러리를 이용해 URL path에 있는 이미지를 캐싱, cell의 Image View에 road
+##### 1. Thumbnail Image caching 
+- Kingfisher 라이브러리를 이용해 URL path에 있는 이미지 캐싱 후 cell의 Image View에 road
 - 라이브러리 관련 참조 : https://dev200ok.blogspot.com/2020/09/ios-kingfisher.html
 
 <img width="435" alt="스크린샷 2021-10-20 00 08 34" src="https://user-images.githubusercontent.com/40759743/137938929-8d03d7a4-11e2-41ef-bb48-7cf5676907a2.png">
@@ -29,7 +77,7 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
         return SRCresultsCell
 ~~~
 
-###### 2.Player View 구성
+##### 2.Player View 구성
 
 <img width="528" alt="스크린샷 2021-10-20 00 15 13" src="https://user-images.githubusercontent.com/40759743/137940160-09ceeff7-8018-406f-81df-1ab04f17a3ce.png">
 
