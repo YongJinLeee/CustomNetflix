@@ -9,6 +9,7 @@ import UIKit
 
 class PlayerViewController: UIViewController {
     
+    // player 가로뷰 자동설정
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .landscape
     }
