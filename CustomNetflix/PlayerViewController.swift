@@ -24,7 +24,7 @@ class PlayerViewController: UIViewController {
     
     // player 가로뷰 자동설정
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
+        return .landscapeRight
     }
     
     override func viewDidLoad() {
@@ -33,6 +33,12 @@ class PlayerViewController: UIViewController {
         // PlayerView AVPlayer 인스턴스화
         playerView.player = player
         
+    }
+    // view에 보여지기 직전
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 자동재생
+        play()
     }
     
     @IBOutlet weak var closeBtn: UIButton!
