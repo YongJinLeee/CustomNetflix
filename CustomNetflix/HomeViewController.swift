@@ -16,21 +16,23 @@ class HomeViewController: UIViewController {
     }
     
     // Home header 재생버튼 재생할 데이터 SearchAPI로 가져오기..
+    // thumbnailPath 이용해 헤더뷰에 사진 뜨도록 수정해야 함
     @IBAction func playBtnOnHomeHeader(_ sender: Any) {
         
-        SearchAPI.search("interstella") { movieInfo in
-            guard let interstella = movieInfo.first else { return }
+        SearchAPI.search("Dark") { movieInfo in
+            guard let randomHeader = movieInfo.randomElement() else { return }
             
             DispatchQueue.main.async {
-                let MovieURL = URL(string: interstella.previewURL)!
+                
+                let MovieURL = URL(string: randomHeader.previewURL)!
                 let item = AVPlayerItem(url: MovieURL)
                 
                 let PlayerSB = UIStoryboard(name: "Player", bundle: nil)
                 let PlayerVC = PlayerSB.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
-                
-                PlayerVC.modalPresentationStyle = .fullScreen
                 // Player에 동영상 주소 로드
                 PlayerVC.player.replaceCurrentItem(with: item)
+                
+                PlayerVC.modalPresentationStyle = .fullScreen
                 self.present(PlayerVC, animated: false, completion: nil)
             }
         }
