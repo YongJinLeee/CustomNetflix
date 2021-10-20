@@ -21,8 +21,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAN-qi-hD9">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAN-qi-hD9">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="417"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V09-fq-j3m">
                                                 <rect key="frame" x="157" y="359" width="101" height="50"/>
@@ -34,9 +35,6 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="gAN-qi-hD9" secondAttribute="height" multiplier="40:48" id="Vqs-ic-tgy"/>
-                                        </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u48-2L-6zB">
                                         <rect key="frame" x="0.0" y="425" width="414" height="388"/>
