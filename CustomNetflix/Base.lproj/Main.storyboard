@@ -161,7 +161,7 @@
                         <segue destination="xEP-0U-CTa" kind="relationship" relationship="viewControllers" id="XxC-h5-e8A"/>
                         <segue destination="ZzT-he-d9w" kind="relationship" relationship="viewControllers" id="1zJ-OM-de0"/>
                         <segue destination="RDt-Cm-1Nj" kind="relationship" relationship="viewControllers" id="vgr-50-lPp"/>
-                        <segue destination="x8Y-Ii-pqf" kind="relationship" relationship="viewControllers" id="wgs-Me-p6o"/>
+                        <segue destination="yEM-gV-c2Q" kind="relationship" relationship="viewControllers" id="gIX-xA-YRg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daR-za-ymp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -185,25 +185,38 @@
             <point key="canvasLocation" x="4120" y="119"/>
         </scene>
         <!--더보기-->
-        <scene sceneID="Yjt-Xs-Cnp">
+        <scene sceneID="ML4-qT-6OA">
             <objects>
-                <viewController id="x8Y-Ii-pqf" userLabel="더보기" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jj7-ZA-dQE">
+                <tableViewController id="yEM-gV-c2Q" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yXL-2F-N39">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="s69-A9-EOD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="더보기" image="gear" catalog="system" id="LVA-5b-GNe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fVj-PT-h3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9bT-KC-bbY">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9bT-KC-bbY" id="fkS-Tg-TJN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yEM-gV-c2Q" id="oEh-YI-yLX"/>
+                            <outlet property="delegate" destination="yEM-gV-c2Q" id="CZ1-9t-987"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="더보기" image="gearshape" catalog="system" id="rag-zu-FNq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JO7-0b-CoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4919" y="119"/>
+            <point key="canvasLocation" x="5045" y="124"/>
         </scene>
     </scenes>
     <resources>
         <image name="clock.fill" catalog="system" width="128" height="121"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
