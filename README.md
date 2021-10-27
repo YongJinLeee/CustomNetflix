@@ -48,6 +48,25 @@ arch -arch x86_64 pod install or other command
 [!]Automatically assigning platform `iOS` with version `14.5` on target `CustomNetflix` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
 ~~~ 
 
+~~~
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CustomNetflix' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CustomNetflix
+  pod 'Firebase/Analytics'
+
+end
+~~~
+> Podfile에 주석처리가 되어있는 부분 때문에 타겟 버전관련 이슈발생 -> 해제, 버전 변경으로 해결
+
+3. 터미널의 동작 방식을 'Rosetta로 열기' 로 설정하고, cocoapods와 ffi 재설치 후 firebase이식 성공
+
+<img width="633" alt="스크린샷 2021-10-27 18 13 56" src="https://user-images.githubusercontent.com/40759743/139036994-00e88775-28e9-4767-aeda-b379d7123865.png">
+
 
 -----------
 201019
