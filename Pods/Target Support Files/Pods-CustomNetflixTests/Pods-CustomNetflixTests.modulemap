@@ -1,6 +1,0 @@
-framework module Pods_CustomNetflixTests {
-  umbrella header "Pods-CustomNetflixTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
