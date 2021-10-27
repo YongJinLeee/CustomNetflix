@@ -10,6 +10,40 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 -----------
 ### 개발 일지 (역순)
 
+201027
+##### Firebase
+
+cocoapods로 Firebase를 붙이는 과정에서 처음 겪는 문제를 맞닥 뜨렸다.
+
+네이버 로그인 SDK, RealmSwift 같은 외부라이브러리나 SDK설치 하면서 한번도 본 적 없는 에러가 수백줄이 뜨니 당황스러웠다.
+
+~~~
+// 터미널 Console에 뜬 message
+
+ See Crash Report log file under the one of following:                    
+     * ~/Library/Logs/DiagnosticReports                                     
+     * /Library/Logs/DiagnosticReports                                      
+   for more details.                
+~~~
+
+
+해결은 역시 구글신. 🤗😂
+
+cocoapods Github repo의 issue에서 답을 찾을 수 있었다 (https://github.com/CocoaPods/CocoaPods/issues/10446 / https://github.com/CocoaPods/CocoaPods/issues/10446#issuecomment-783412450)
+> 찾아보니 애플실리콘 M1을 탑재한 모델들에서 발생하는 문제인 것 같았고, 생각보다 오래된 이슈였다
+ 
+~~~
+// 아키텍쳐 x86으로 변경해 cocoapods 재설치
+sudo arch -arch x86_64 gem install cocoapods
+
+arch -arch x86_64 pod install or other command
+~~~
+- 기존 Intel CPU에서 작동하던 Ruby와 cocoapods의 문제였고, Rosetta2와 아키텍쳐 변경으로 우회적인 방법을 사용해 실행하게 되는 것
+- M1 칩 제품이 출시된지 1년이 넘었는데 ARM에서 충돌 없이 기본적으로 잘 실행되는 방법이 있지 않을까? 더 찾아봐야할 문제.
+- github.io 블로그 관리를 위해 Jeykll 편집을 할 때도 MacOS 기본으로 깔려있는 Ruby 2.6.8가 M1과 충돌이 생겨 굳이굳이 2.7.2로 새로 설치 뒤 다시 받아서 해결했던 기억이 있다.
+
+- ...여전히 해결중..
+-----------
 201019
 
 ##### Player View
