@@ -67,7 +67,9 @@ end
 
 <img width="633" alt="스크린샷 2021-10-27 18 13 56" src="https://user-images.githubusercontent.com/40759743/139036994-00e88775-28e9-4767-aeda-b379d7123865.png">
 
-
+참조
+- https://github.com/CocoaPods/CocoaPods/issues/10220
+- https://ondemand.tistory.com/340
 -----------
 201019
 
