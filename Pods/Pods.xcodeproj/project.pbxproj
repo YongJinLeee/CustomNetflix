@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		136A159876803ED46F47D961FB90DD6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2EAF3AA607867CE0201B27D7D0E70E54 /* Pods-CustomNetflixTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 329D587BB44D0AC6F3CE1EF26CFDC0BB /* Pods-CustomNetflixTests-dummy.m */; };
+		2F666497D73B5A9C576217129CE6A627 /* Pods-CustomNetflixTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFEA36854BF9A9F74113E14FEAE03539 /* Pods-CustomNetflixTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40DAEF82DFC536B8474E0F6A095A9986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6479E4AA1F47F319B91987C1AC568195 /* Pods-CustomNetflix-CustomNetflixUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 746FE3331BA61557C58FE61122036FD6 /* Pods-CustomNetflix-CustomNetflixUITests-dummy.m */; };
+		6DA3F4DD2A141DAC470AB41C122155DF /* Pods-CustomNetflix-CustomNetflixUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F811CE7973663FF663AFF4557F99DB7 /* Pods-CustomNetflix-CustomNetflixUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83F2BE606802FB2561E12C178E6EA3C6 /* Pods-CustomNetflix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF94453BCC2E33207BD9A4B2ED6DEE3E /* Pods-CustomNetflix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC9002C444DF52C4272DB3D4A5BBA253 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		ECB4C7A3467BB70D6D39A053368770AD /* Pods-CustomNetflix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E679740FA47300F48AE51241C8404ED /* Pods-CustomNetflix-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D706845951CEC66878EB809F7996500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3A182DDDC02D534921E76322BE5808;
+			remoteInfo = "Pods-CustomNetflix";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AFB60619B9604C511107FE1A89DCFD2 /* Pods-CustomNetflix-CustomNetflixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomNetflix-CustomNetflixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E679740FA47300F48AE51241C8404ED /* Pods-CustomNetflix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomNetflix-dummy.m"; sourceTree = "<group>"; };
+		260E8463E9589523B500A67A5CB29078 /* Pods-CustomNetflix-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomNetflix-acknowledgements.markdown"; sourceTree = "<group>"; };
+		27801D86775C8536F85BF06EF805A32F /* Pods-CustomNetflix-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomNetflix-Info.plist"; sourceTree = "<group>"; };
+		30AB23DC6CE868991295B1B635E7A926 /* Pods-CustomNetflix */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CustomNetflix"; path = Pods_CustomNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		329D587BB44D0AC6F3CE1EF26CFDC0BB /* Pods-CustomNetflixTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomNetflixTests-dummy.m"; sourceTree = "<group>"; };
+		3616A6706987F19D62FA2616D1983889 /* Pods-CustomNetflixTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomNetflixTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3ECA88CFDF3078A82307575885C2ABF3 /* Pods-CustomNetflix-CustomNetflixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomNetflix-CustomNetflixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3ED85779F51E0E8D6CBAA573B0C98EB8 /* Pods-CustomNetflix-CustomNetflixUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomNetflix-CustomNetflixUITests-Info.plist"; sourceTree = "<group>"; };
+		4F811CE7973663FF663AFF4557F99DB7 /* Pods-CustomNetflix-CustomNetflixUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomNetflix-CustomNetflixUITests-umbrella.h"; sourceTree = "<group>"; };
+		60C006133B42F610FA3D4D677B831C15 /* Pods-CustomNetflixTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomNetflixTests-Info.plist"; sourceTree = "<group>"; };
+		61430D36B25BDB173F44182B2A8998E0 /* Pods-CustomNetflix-CustomNetflixUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CustomNetflix-CustomNetflixUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		746FE3331BA61557C58FE61122036FD6 /* Pods-CustomNetflix-CustomNetflixUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CustomNetflix-CustomNetflixUITests-dummy.m"; sourceTree = "<group>"; };
+		8368BA8BCB9B1D262FE28E8A166AA3B2 /* Pods-CustomNetflixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomNetflixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9102CF772EC3FE06C5DEF79E641EBDF3 /* Pods-CustomNetflixTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomNetflixTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		929632D65FE412C7734C152956B5BB3A /* Pods-CustomNetflix-CustomNetflixUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CustomNetflix-CustomNetflixUITests"; path = Pods_CustomNetflix_CustomNetflixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2F8F5BCFB989E3D472C7205F25AD2B /* Pods-CustomNetflixTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CustomNetflixTests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABD96380CF56303215092E7CCD781D41 /* Pods-CustomNetflixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomNetflixTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAE201DD09BC970995C832DDEC12490A /* Pods-CustomNetflixTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CustomNetflixTests"; path = Pods_CustomNetflixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB096C2EF69491EB4A264EE8E3482344 /* Pods-CustomNetflix-CustomNetflixUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomNetflix-CustomNetflixUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D03056C8ED6F956A74661E052D837CF6 /* Pods-CustomNetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomNetflix.release.xcconfig"; sourceTree = "<group>"; };
+		D7B099A99B4C2DFD24E3D4C68557A8B9 /* Pods-CustomNetflix-CustomNetflixUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CustomNetflix-CustomNetflixUITests.modulemap"; sourceTree = "<group>"; };
+		DFEA36854BF9A9F74113E14FEAE03539 /* Pods-CustomNetflixTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomNetflixTests-umbrella.h"; sourceTree = "<group>"; };
+		E088D71130B8CB1FFD2DB6BF8A174664 /* Pods-CustomNetflix-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CustomNetflix-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED995EBC37C3B4E2127555EE3F564287 /* Pods-CustomNetflix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CustomNetflix.modulemap"; sourceTree = "<group>"; };
+		EF94453BCC2E33207BD9A4B2ED6DEE3E /* Pods-CustomNetflix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CustomNetflix-umbrella.h"; sourceTree = "<group>"; };
+		FCB8BBFA5C2A5CA9FF3E2973D0169574 /* Pods-CustomNetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomNetflix.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E4B17AEF98C1BFCC921269B2C957127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9002C444DF52C4272DB3D4A5BBA253 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEE33BB5935D7963408349B56AF16803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136A159876803ED46F47D961FB90DD6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB09820F680C028A928CC8826BD3356E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DAEF82DFC536B8474E0F6A095A9986 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EB6FB26CC4464C3C935DF5C4963A107 /* Pods-CustomNetflix */ = {
+			isa = PBXGroup;
+			children = (
+				ED995EBC37C3B4E2127555EE3F564287 /* Pods-CustomNetflix.modulemap */,
+				260E8463E9589523B500A67A5CB29078 /* Pods-CustomNetflix-acknowledgements.markdown */,
+				E088D71130B8CB1FFD2DB6BF8A174664 /* Pods-CustomNetflix-acknowledgements.plist */,
+				1E679740FA47300F48AE51241C8404ED /* Pods-CustomNetflix-dummy.m */,
+				27801D86775C8536F85BF06EF805A32F /* Pods-CustomNetflix-Info.plist */,
+				EF94453BCC2E33207BD9A4B2ED6DEE3E /* Pods-CustomNetflix-umbrella.h */,
+				FCB8BBFA5C2A5CA9FF3E2973D0169574 /* Pods-CustomNetflix.debug.xcconfig */,
+				D03056C8ED6F956A74661E052D837CF6 /* Pods-CustomNetflix.release.xcconfig */,
+			);
+			name = "Pods-CustomNetflix";
+			path = "Target Support Files/Pods-CustomNetflix";
+			sourceTree = "<group>";
+		};
+		523BD7852170C3E74B44A5D7E5CCF2A5 /* Pods-CustomNetflix-CustomNetflixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7B099A99B4C2DFD24E3D4C68557A8B9 /* Pods-CustomNetflix-CustomNetflixUITests.modulemap */,
+				61430D36B25BDB173F44182B2A8998E0 /* Pods-CustomNetflix-CustomNetflixUITests-acknowledgements.markdown */,
+				CB096C2EF69491EB4A264EE8E3482344 /* Pods-CustomNetflix-CustomNetflixUITests-acknowledgements.plist */,
+				746FE3331BA61557C58FE61122036FD6 /* Pods-CustomNetflix-CustomNetflixUITests-dummy.m */,
+				3ED85779F51E0E8D6CBAA573B0C98EB8 /* Pods-CustomNetflix-CustomNetflixUITests-Info.plist */,
+				4F811CE7973663FF663AFF4557F99DB7 /* Pods-CustomNetflix-CustomNetflixUITests-umbrella.h */,
+				3ECA88CFDF3078A82307575885C2ABF3 /* Pods-CustomNetflix-CustomNetflixUITests.debug.xcconfig */,
+				0AFB60619B9604C511107FE1A89DCFD2 /* Pods-CustomNetflix-CustomNetflixUITests.release.xcconfig */,
+			);
+			name = "Pods-CustomNetflix-CustomNetflixUITests";
+			path = "Target Support Files/Pods-CustomNetflix-CustomNetflixUITests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5EC4CCE6974BEC0DD7D903E94C196948 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EB6FB26CC4464C3C935DF5C4963A107 /* Pods-CustomNetflix */,
+				523BD7852170C3E74B44A5D7E5CCF2A5 /* Pods-CustomNetflix-CustomNetflixUITests */,
+				F8CA7FAC31B56FBD1A5E3FD0C8068824 /* Pods-CustomNetflixTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B0E6044AE5881720248B1E0EA944CE5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30AB23DC6CE868991295B1B635E7A926 /* Pods-CustomNetflix */,
+				929632D65FE412C7734C152956B5BB3A /* Pods-CustomNetflix-CustomNetflixUITests */,
+				BAE201DD09BC970995C832DDEC12490A /* Pods-CustomNetflixTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B0E6044AE5881720248B1E0EA944CE5E /* Products */,
+				5EC4CCE6974BEC0DD7D903E94C196948 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8CA7FAC31B56FBD1A5E3FD0C8068824 /* Pods-CustomNetflixTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F8F5BCFB989E3D472C7205F25AD2B /* Pods-CustomNetflixTests.modulemap */,
+				3616A6706987F19D62FA2616D1983889 /* Pods-CustomNetflixTests-acknowledgements.markdown */,
+				9102CF772EC3FE06C5DEF79E641EBDF3 /* Pods-CustomNetflixTests-acknowledgements.plist */,
+				329D587BB44D0AC6F3CE1EF26CFDC0BB /* Pods-CustomNetflixTests-dummy.m */,
+				60C006133B42F610FA3D4D677B831C15 /* Pods-CustomNetflixTests-Info.plist */,
+				DFEA36854BF9A9F74113E14FEAE03539 /* Pods-CustomNetflixTests-umbrella.h */,
+				8368BA8BCB9B1D262FE28E8A166AA3B2 /* Pods-CustomNetflixTests.debug.xcconfig */,
+				ABD96380CF56303215092E7CCD781D41 /* Pods-CustomNetflixTests.release.xcconfig */,
+			);
+			name = "Pods-CustomNetflixTests";
+			path = "Target Support Files/Pods-CustomNetflixTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7A82687280258D1C1526F197EE5719BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F666497D73B5A9C576217129CE6A627 /* Pods-CustomNetflixTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD89C8B00CC1AC90838333606F564AD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F2BE606802FB2561E12C178E6EA3C6 /* Pods-CustomNetflix-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB758F126182970B4B9DBD01E9017A18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA3F4DD2A141DAC470AB41C122155DF /* Pods-CustomNetflix-CustomNetflixUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45080BB2B5CECF9A94F6B67BCADF5927 /* Pods-CustomNetflix-CustomNetflixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C26B1842EDC58F1A413FA493D940C70 /* Build configuration list for PBXNativeTarget "Pods-CustomNetflix-CustomNetflixUITests" */;
+			buildPhases = (
+				BB758F126182970B4B9DBD01E9017A18 /* Headers */,
+				5A6724724E91A5DAAB1DE95510BE448D /* Sources */,
+				2E4B17AEF98C1BFCC921269B2C957127 /* Frameworks */,
+				B4A0695C0B061445777382A5EAB5949E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CustomNetflix-CustomNetflixUITests";
+			productName = Pods_CustomNetflix_CustomNetflixUITests;
+			productReference = 929632D65FE412C7734C152956B5BB3A /* Pods-CustomNetflix-CustomNetflixUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD3A182DDDC02D534921E76322BE5808 /* Pods-CustomNetflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD6857E47B79CB2373D50418E475023 /* Build configuration list for PBXNativeTarget "Pods-CustomNetflix" */;
+			buildPhases = (
+				AD89C8B00CC1AC90838333606F564AD4 /* Headers */,
+				905207A5D93AE0AEC39FB62E0B41BDC2 /* Sources */,
+				AEE33BB5935D7963408349B56AF16803 /* Frameworks */,
+				F24B0E2711C6F8D65602F09A7C6A8A12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CustomNetflix";
+			productName = Pods_CustomNetflix;
+			productReference = 30AB23DC6CE868991295B1B635E7A926 /* Pods-CustomNetflix */;
+			productType = "com.apple.product-type.framework";
+		};
+		F515789C2E9B77FFC1027059E14548A6 /* Pods-CustomNetflixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2165A5218CD1F26D2EDCAA97B8110CCF /* Build configuration list for PBXNativeTarget "Pods-CustomNetflixTests" */;
+			buildPhases = (
+				7A82687280258D1C1526F197EE5719BC /* Headers */,
+				B66149594B2915EEAF5B19AAAA1F4E1B /* Sources */,
+				CB09820F680C028A928CC8826BD3356E /* Frameworks */,
+				214CEB1976823EBB07B64E9A6D2BBEFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44D5E50E9C8EAFC8407ED50B11336F2F /* PBXTargetDependency */,
+			);
+			name = "Pods-CustomNetflixTests";
+			productName = Pods_CustomNetflixTests;
+			productReference = BAE201DD09BC970995C832DDEC12490A /* Pods-CustomNetflixTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B0E6044AE5881720248B1E0EA944CE5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD3A182DDDC02D534921E76322BE5808 /* Pods-CustomNetflix */,
+				45080BB2B5CECF9A94F6B67BCADF5927 /* Pods-CustomNetflix-CustomNetflixUITests */,
+				F515789C2E9B77FFC1027059E14548A6 /* Pods-CustomNetflixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		214CEB1976823EBB07B64E9A6D2BBEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A0695C0B061445777382A5EAB5949E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24B0E2711C6F8D65602F09A7C6A8A12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A6724724E91A5DAAB1DE95510BE448D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6479E4AA1F47F319B91987C1AC568195 /* Pods-CustomNetflix-CustomNetflixUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905207A5D93AE0AEC39FB62E0B41BDC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB4C7A3467BB70D6D39A053368770AD /* Pods-CustomNetflix-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66149594B2915EEAF5B19AAAA1F4E1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAF3AA607867CE0201B27D7D0E70E54 /* Pods-CustomNetflixTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44D5E50E9C8EAFC8407ED50B11336F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CustomNetflix";
+			target = DD3A182DDDC02D534921E76322BE5808 /* Pods-CustomNetflix */;
+			targetProxy = 1D706845951CEC66878EB809F7996500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2389EEF26C7EEF25BEE8F6735A453132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8368BA8BCB9B1D262FE28E8A166AA3B2 /* Pods-CustomNetflixTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomNetflixTests/Pods-CustomNetflixTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomNetflixTests/Pods-CustomNetflixTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4775F1F1E6E63E99B1F0574DDAF693D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03056C8ED6F956A74661E052D837CF6 /* Pods-CustomNetflix.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomNetflix/Pods-CustomNetflix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomNetflix/Pods-CustomNetflix.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BD8BA83062C65CF574FF60269957D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ECA88CFDF3078A82307575885C2ABF3 /* Pods-CustomNetflix-CustomNetflixUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomNetflix-CustomNetflixUITests/Pods-CustomNetflix-CustomNetflixUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomNetflix-CustomNetflixUITests/Pods-CustomNetflix-CustomNetflixUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E0E2FC143B59A903925D393B2FC97B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD96380CF56303215092E7CCD781D41 /* Pods-CustomNetflixTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomNetflixTests/Pods-CustomNetflixTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomNetflixTests/Pods-CustomNetflixTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A26A281564B29D6557A94D203010C79F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB8BBFA5C2A5CA9FF3E2973D0169574 /* Pods-CustomNetflix.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomNetflix/Pods-CustomNetflix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomNetflix/Pods-CustomNetflix.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DC54E6C79801EE38ADD0074493A20724 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AFB60619B9604C511107FE1A89DCFD2 /* Pods-CustomNetflix-CustomNetflixUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CustomNetflix-CustomNetflixUITests/Pods-CustomNetflix-CustomNetflixUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CustomNetflix-CustomNetflixUITests/Pods-CustomNetflix-CustomNetflixUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2165A5218CD1F26D2EDCAA97B8110CCF /* Build configuration list for PBXNativeTarget "Pods-CustomNetflixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2389EEF26C7EEF25BEE8F6735A453132 /* Debug */,
+				4E0E2FC143B59A903925D393B2FC97B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD6857E47B79CB2373D50418E475023 /* Build configuration list for PBXNativeTarget "Pods-CustomNetflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26A281564B29D6557A94D203010C79F /* Debug */,
+				4775F1F1E6E63E99B1F0574DDAF693D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C26B1842EDC58F1A413FA493D940C70 /* Build configuration list for PBXNativeTarget "Pods-CustomNetflix-CustomNetflixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BD8BA83062C65CF574FF60269957D2D /* Debug */,
+				DC54E6C79801EE38ADD0074493A20724 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
