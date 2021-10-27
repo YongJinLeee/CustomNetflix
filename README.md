@@ -29,8 +29,9 @@ cocoapods로 Firebase를 붙이는 과정에서 처음 겪는 문제를 맞닥 �
 
 > 해결은 역시 구글신. 🤗 😂
 
-cocoapods Github repo의 issue에서 답을 찾을 수 있었다 (https://github.com/CocoaPods/CocoaPods/issues/10446 / https://github.com/CocoaPods/CocoaPods/issues/10446#issuecomment-783412450)
-> 찾아보니 애플실리콘 M1을 탑재한 모델들에서 발생하는 문제인 것 같았고, 생각보다 오래된 이슈였다
+cocoapods Github repo의 issue에서 답을 찾을 수 있었다. 
+(https://github.com/CocoaPods/CocoaPods/issues/10446 / https://github.com/CocoaPods/CocoaPods/issues/10446#issuecomment-783412450)
+> 에러코드를 천천히 훑어보니 아키텍쳐에 대한 이야기가 많이 나왔고, 애플실리콘 M1을 탑재한 모델들에서 발생하는 문제로 알려져음
  
 ~~~
 // 아키텍쳐 x86으로 변경해 cocoapods 재설치
@@ -63,7 +64,7 @@ end
 ~~~
 > Podfile에 주석처리가 되어있는 부분 때문에 타겟 버전관련 이슈발생 -> 해제, 버전 변경으로 해결
 
-3. 터미널의 동작 방식을 'Rosetta로 열기' 로 설정하고, cocoapods와 ffi 재설치 후 firebase이식 성공
+3. 터미널의 동작 방식을 'Rosetta로 열기' 로 설정하고, cocoapods와 ffi 재설치 후 irebase 설치 성공
 
 <img width="633" alt="스크린샷 2021-10-27 18 13 56" src="https://user-images.githubusercontent.com/40759743/139036994-00e88775-28e9-4767-aeda-b379d7123865.png">
 
