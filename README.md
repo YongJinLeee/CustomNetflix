@@ -10,7 +10,7 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 -----------
 ### 개발 일지 (역순)
 
-201027
+211027
 ##### Firebase
 1. m1과 cocoapods..
 cocoapods로 Firebase를 붙이는 과정에서 처음 겪는 문제를 맞닥 뜨렸다.
