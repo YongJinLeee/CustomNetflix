@@ -270,7 +270,7 @@
 			);
 			mainGroup = 4CCE2B60270C7363008F3D41;
 			packageReferences = (
-				4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 4CCE2B6A270C7363008F3D41 /* Products */;
 			projectDirPath = "";
@@ -548,7 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWMGRS9MY;
 				INFOPLIST_FILE = CustomNetflix/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +570,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWMGRS9MY;
 				INFOPLIST_FILE = CustomNetflix/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -709,7 +709,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -722,7 +722,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		4C9EE2AA271567EE00741E50 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 4C9EE2A9271567EE00741E50 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
