@@ -4,13 +4,30 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 
 #### 사용 기술 및 라이브러리
 - Swift, iOS
-- URLSession, AVFoundation
+- 주사용 모듈 및 클래스 : URLSession, AVFoundation
 - 외부 라이브러리 : Kingfisher(https://github.com/onevcat/Kingfisher), Firebase
 
 -----------
 ### 개발 일지 (역순)
+211102
 
-201027
+##### Target errors
+![스크린샷 2021-11-03 01 48 39](https://user-images.githubusercontent.com/40759743/139911584-7eb92565-95f7-4d61-84d8-433f086f5640.png)
+
+
+1. Kingfisher의 최소 타겟은 iOS 12.0이고
+2. SceneDelegate를 이용해 앱의 UI Lifecycle과 AppDelegate의 Process Lifecycle을 분리 설계하는 디자인 패턴은 iOS 13 부터 사용할 수 있다
+
+> UIScene 관련 참조
+2019WWDC Scene 설명 영상(https://developer.apple.com/videos/play/wwdc2019/212/)
+
+<img width="828" alt="스크린샷 2021-11-03 02 01 30" src="https://user-images.githubusercontent.com/40759743/139911424-bdf56562-3237-412f-8197-a2042b8074f2.png">
+
+- 멀티태스킹, 스플릿뷰 와 같이 한 앱이 서로 다른 씬을 갖는 것이 가장 대표적인 가능 사례. (메모앱 동시 스플릿뷰 사용 가능)
+
+
+-----------
+211027
 ##### Firebase
 1. m1과 cocoapods..
 cocoapods로 Firebase를 붙이는 과정에서 처음 겪는 문제를 맞닥 뜨렸다.
@@ -29,8 +46,9 @@ cocoapods로 Firebase를 붙이는 과정에서 처음 겪는 문제를 맞닥 �
 
 > 해결은 역시 구글신. 🤗 😂
 
-cocoapods Github repo의 issue에서 답을 찾을 수 있었다 (https://github.com/CocoaPods/CocoaPods/issues/10446 / https://github.com/CocoaPods/CocoaPods/issues/10446#issuecomment-783412450)
-> 찾아보니 애플실리콘 M1을 탑재한 모델들에서 발생하는 문제인 것 같았고, 생각보다 오래된 이슈였다
+cocoapods Github repo의 issue에서 답을 찾을 수 있었다. 
+(https://github.com/CocoaPods/CocoaPods/issues/10446 / https://github.com/CocoaPods/CocoaPods/issues/10446#issuecomment-783412450)
+> 에러코드를 천천히 훑어보니 아키텍쳐에 대한 이야기가 많이 나왔고, 애플실리콘 M1을 탑재한 모델들에서 발생하는 문제로 알려져음
  
 ~~~
 // 아키텍쳐 x86으로 변경해 cocoapods 재설치
@@ -63,7 +81,7 @@ end
 ~~~
 > Podfile에 주석처리가 되어있는 부분 때문에 타겟 버전관련 이슈발생 -> 해제, 버전 변경으로 해결
 
-3. 터미널의 동작 방식을 'Rosetta로 열기' 로 설정하고, cocoapods와 ffi 재설치 후 firebase이식 성공
+3. 터미널의 동작 방식을 'Rosetta로 열기' 로 설정하고, cocoapods와 ffi 재설치 후 irebase 설치 성공
 
 <img width="633" alt="스크린샷 2021-10-27 18 13 56" src="https://user-images.githubusercontent.com/40759743/139036994-00e88775-28e9-4767-aeda-b379d7123865.png">
 
