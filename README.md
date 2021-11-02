@@ -9,7 +9,24 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 
 -----------
 ### 개발 일지 (역순)
+211102
 
+##### Target errors
+![스크린샷 2021-11-03 01 48 39](https://user-images.githubusercontent.com/40759743/139911584-7eb92565-95f7-4d61-84d8-433f086f5640.png)
+
+
+1. Kingfisher의 최소 타겟은 iOS 12.0이고
+2. SceneDelegate를 이용해 앱의 UI Lifecycle과 AppDelegate의 Process Lifecycle을 분리 설계하는 디자인 패턴은 iOS 13 부터 사용할 수 있다
+
+> UIScene 관련 참조
+2019WWDC Scene 설명 영상(https://developer.apple.com/videos/play/wwdc2019/212/)
+
+<img width="828" alt="스크린샷 2021-11-03 02 01 30" src="https://user-images.githubusercontent.com/40759743/139911424-bdf56562-3237-412f-8197-a2042b8074f2.png">
+
+- 멀티태스킹, 스플릿뷰 와 같이 한 앱이 서로 다른 씬을 갖는 것이 가장 대표적인 가능 사례. (메모앱 동시 스플릿뷰 사용 가능)
+
+
+-----------
 211027
 ##### Firebase
 1. m1과 cocoapods..
