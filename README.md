@@ -4,11 +4,16 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 
 #### 사용 기술 및 라이브러리
 - Swift, iOS
-- 주사용 모듈 및 클래스 : URLSession, AVFoundation, Storyboard 
-- 외부 라이브러리 : Kingfisher(https://github.com/onevcat/Kingfisher), Firebase(realtimeDB)
+- 주사용 모듈 및 클래스 : URLSession, AVFoundation, Storyboard 기반
+- 외부 라이브러리 : Kingfisher(https://github.com/onevcat/Kingfisher), Firebase(realtime DB)
 
 -----------
 ### 개발 일지 (역순)
+
+211108
+Firebase RT DB 이식 및 
+
+-----------
 211102
 
 ##### Target errors
