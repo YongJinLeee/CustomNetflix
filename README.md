@@ -11,9 +11,17 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 ### 개발 일지 (역순)
 
 211108
-##### Firebase RealTime DataBase 이식 및 
+##### Firebase RealTime DataBase 이식작업
 
-~~누가 이렇게 줄여 쓰나~~
+<img width="523" alt="스크린샷 2021-11-10 23 28 49" src="https://user-images.githubusercontent.com/40759743/141131428-badfa702-67d2-49d6-84b1-eb5ea3f2afad.png">
+
+> 이 페이지는 아래의 코드와 연결되어있다.
+
+~~~swift
+var ref: DatabaseReference!
+// 상수 db를 FIRDatabaseReference 의 인스턴스화 시켜 위의 페이지에 적힌 DB의 내용을 가져옴
+let db = Database.database().reference()
+~~~
 
 
 -----------
