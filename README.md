@@ -18,7 +18,6 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 > 이 페이지는 아래의 코드와 연결되어있다.
 
 ~~~swift
-var ref: DatabaseReference!
 // 상수 db를 FIRDatabaseReference 의 인스턴스화 시켜 위의 페이지에 적힌 DB의 내용을 가져옴
 let db = Database.database().reference()
 ~~~
