@@ -20,20 +20,20 @@ class SaveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updataDBTest()
+    }
+    
+    func updataDBTest() {
         // 전달은 JSON type
         db.child("firstData").observeSingleEvent(of: .value) { snapshot in
-            
             print("what data in snapshot: \(snapshot)")
             
             let value = snapshot.value as? String ?? ""
-            
             // UI관련 이기때문에 main Thread에서 처리
             DispatchQueue.main.async {
                 self.dataLabel.text = value
             }
-            
             print("\(value)")
-
             //            print("What a data in snapshot : \(snapshot)")
         }
     }
