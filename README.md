@@ -22,6 +22,39 @@ Netflix의 URL을 활용한 넷플릭스 영상 추천 앱 CustomNetflix
 let db = Database.database().reference()
 ~~~
 
+##### 초기 연동 되지 않을 시 확인할 부분!
+첫 연동 후 프로그래밍 첫 시작의 룰(?ㅋㅋ) 인 "Hello \(언어명)!!!"을 가져오고자 시도했으나 print명령에도 console은 묵묵부답..
+Firebase에서 DB를 재구성 해보기도 하고, 코드 내부에서 인스턴스를 다시 새로 생성하기도 했으나 여전히 받아오지 못하고 있는 상태였다.
+하지만 다시 console에 뜬 메시지들을 처음부터 읽다보니 DB에 접근 자체를 못하고 있길래 firebase 이식할 때 추가했던 .plist를 확인해보니 아래와 같았다.
+
+<img width="234" alt="스크린샷 2021-11-11 12 34 27" src="https://user-images.githubusercontent.com/40759743/141232724-19ec281b-09fc-40a5-967e-f1f4bff8847f.png">
+
+> GoolgeService-Info.plist에 DB URL이 추가 되었는지 확인해보자....해결🤗!
+
+
+##### 연동테스트 관련 
+
+> 🛠 콘솔 테스트 코드
+~~~Swift
+func updataDBTest() {
+        db.child("firstData").observeSingleEvent(of: .value) { snapshot in
+            print("what data in snapshot: \(snapshot)")
+            
+            // Test Label에 text로 전달하기 위해서 다운캐스팅
+            let value = snapshot.value as? String ?? ""
+            
+            DispatchQueue.main.async {
+                self.dataLabel.text = value
+            }
+            print("\(value)")
+        }
+    }
+~~~
+
+콘솔 결과창
+
+<img width="338" alt="스크린샷 2021-11-11 12 49 38" src="https://user-images.githubusercontent.com/40759743/141233847-20219a19-9cc4-4eb2-a4c6-93c7bd4020ed.png">
+
 
 -----------
 211102
