@@ -98,6 +98,7 @@ iOSInjectionProject/
 ### Firebase Patch ###
 .runtimeconfig.json
 .firebase/
+GoogleService-Info.plist
 
 # End of https://www.toptal.com/developers/gitignore/api/firebase
 
@@ -113,3 +114,4 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift
+
