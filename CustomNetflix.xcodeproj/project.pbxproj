@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C21161427292F7B001B4186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C21161327292F7B001B4186 /* GoogleService-Info.plist */; };
-		4C21161527292F7B001B4186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C21161327292F7B001B4186 /* GoogleService-Info.plist */; };
-		4C21161627292F7B001B4186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C21161327292F7B001B4186 /* GoogleService-Info.plist */; };
+		4C974C2B273CC3AF00681418 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C974C2A273CC3AF00681418 /* GoogleService-Info.plist */; };
 		4C9EE2A82714888A00741E50 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EE2A72714888A00741E50 /* SearchAPI.swift */; };
 		4C9EE2AB271567EE00741E50 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9EE2AA271567EE00741E50 /* Kingfisher */; };
 		4C9EE2AD27175D9600741E50 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9EE2AC27175D9600741E50 /* PlayerViewController.swift */; };
@@ -48,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		1358DAE33CE5C05A20340EC1 /* Pods_CustomNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C21161327292F7B001B4186 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C974C2A273CC3AF00681418 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4C9EE2A72714888A00741E50 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 		4C9EE2AC27175D9600741E50 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		4C9EE2AE27175DC900741E50 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
@@ -134,7 +132,7 @@
 				4CCE2B78270C7364008F3D41 /* Assets.xcassets */,
 				4CCE2B7A270C7364008F3D41 /* LaunchScreen.storyboard */,
 				4CCE2B7D270C7364008F3D41 /* Info.plist */,
-				4C21161327292F7B001B4186 /* GoogleService-Info.plist */,
+				4C974C2A273CC3AF00681418 /* GoogleService-Info.plist */,
 				4CCE2B75270C7363008F3D41 /* CustomNetflix.xcdatamodeld */,
 				4C9EE2A72714888A00741E50 /* SearchAPI.swift */,
 				4C9EE2AC27175D9600741E50 /* PlayerViewController.swift */,
@@ -293,7 +291,7 @@
 			files = (
 				4CCE2B7C270C7364008F3D41 /* LaunchScreen.storyboard in Resources */,
 				4C9EE2AF27175DC900741E50 /* Player.storyboard in Resources */,
-				4C21161427292F7B001B4186 /* GoogleService-Info.plist in Resources */,
+				4C974C2B273CC3AF00681418 /* GoogleService-Info.plist in Resources */,
 				4CCE2B79270C7364008F3D41 /* Assets.xcassets in Resources */,
 				4CCE2B74270C7363008F3D41 /* Main.storyboard in Resources */,
 			);
@@ -303,7 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C21161527292F7B001B4186 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +308,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C21161627292F7B001B4186 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
