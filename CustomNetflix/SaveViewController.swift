@@ -26,7 +26,11 @@ class SaveViewController: UIViewController {
             print("what data in snapshot: \(snapshot)")
             
             let value = snapshot.value as? String ?? ""
-            self.dataLabel.text = value
+            
+            // UI관련 이기때문에 main Thread에서 처리
+            DispatchQueue.main.async {
+                self.dataLabel.text = value
+            }
             
             print("\(value)")
 
