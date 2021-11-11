@@ -30,13 +30,13 @@ class SaveViewController: UIViewController {
         db.child("firstData").observeSingleEvent(of: .value) { snapshot in
             print("what data in snapshot: \(snapshot)")
             
+            // Test Label에 text로 전달하기 위해서 다운캐스팅
             let value = snapshot.value as? String ?? ""
-            // UI관련 이기때문에 main Thread에서 처리
+            // UI관련 -> main Thread에서 처리
             DispatchQueue.main.async {
                 self.dataLabel.text = value
             }
             print("\(value)")
-            //            print("What a data in snapshot : \(snapshot)")
         }
     }
 
