@@ -14,6 +14,9 @@ class PlayerViewController: UIViewController {
     // 1. seeking bar
     // 2. 재생 후 View isHidden 기능 추가
     // 2-1. 화면 터치시 view 다시 보이기 - 자동 사라짐 기능
+    // 3. 슬라이더 기능 추가
+    // 4. 이 모든 동작을 player view 위의 한 레이어에서 처리
+    // - 차라리 AVPlayer Kit ViewController를 쓰면 안될까..?
     
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var playerView: PlayerView!
