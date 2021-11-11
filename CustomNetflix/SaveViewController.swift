@@ -8,6 +8,7 @@
 import os
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class SaveViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class SaveViewController: UIViewController {
     // Firebace의 realTime DB의 레퍼런스 불러오기;
     // Gets a FIRDatabaseReference for the root of your Firebase Database.
     // : FIRDatabaseReference의 인스턴스화 상수 db (.reference() 호출)
+    var ref: DatabaseReference!
     let db = Database.database().reference()
     
     override func viewDidLoad() {
