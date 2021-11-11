@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1038190833054-j6r6v93nr9em5qt1bc64ui228dfbeknl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1038190833054-j6r6v93nr9em5qt1bc64ui228dfbeknl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPyfU-8LtNYNj0OjARC0DWbhTPcE2WgRU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1038190833054</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yongjin.CustomNetflix</string>
+	<key>PROJECT_ID</key>
+	<string>customnetflix-v</string>
+	<key>STORAGE_BUCKET</key>
+	<string>customnetflix-v.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1038190833054:ios:1212a89d9fcd7667d07a8f</string>
+	<key>DATABASE_URL</key>
+	<string>https://customnetflix-v-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
